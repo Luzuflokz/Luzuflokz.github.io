@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti <3 </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="petals" id="petals"></div>
+    
+    <header>
+        <h1>🌻 Para Stephany 🌻</h1>
+        <p class="subtitle">Una entrega especial de flores amarillas para la persona más hermosa de mi mundo</p>
+        
+        <div class="countdown-container">
+            <div class="countdown" id="countdown">
+                <div class="time-unit">
+                    <span class="time-number" id="days">0</span>
+                    <span class="time-label">Días</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="hours">0</span>
+                    <span class="time-label">Horas</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="minutes">0</span>
+                    <span class="time-label">Minutos</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="seconds">0</span>
+                    <span class="time-label">Segundos</span>
+                </div>
+            </div>
+            <p></p>
+        </div>
+    </header>
+    
+    <div class="sections">
+        <div class="section">
+            <h3>Quinzel🐱</h3>
+            <p>Otra vieja pelleja</p>
+            <div class="cat-section">
+                <div class="cat-display">
+                    <div class="cat-emoji" id="catEmoji">🐱</div>
+                    <div class="cat-message" id="catMessage">
+                        "Miau~"
+                    </div>
+                </div>
+                <div class="cat-actions">
+                    <button class="cat-btn" onclick="feedCat()">Darle amor</button>
+                    <button class="cat-btn" onclick="playCat()">Jugar</button>
+                    <button class="cat-btn" onclick="hugCat()">Abrazo</button>
+                </div>
+                <div class="cat-hearts" id="catHearts"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Carta especial 💌</h3>
+            <p>Un mensaje secreto 👀</p>
+            
+            <div class="secret-lock" id="secretLock">
+                <div class="lock-icon">🔒</div>
+                <p>Esta carta está protegida con una clave especial</p>
+                <div class="password-input">
+                    <input type="password" id="secretPassword" placeholder="Ingresa la clave secreta..." maxlength="20">
+                    <button class="unlock-btn" onclick="unlockLetter()">Desbloquear 🗝️</button>
+                </div>
+                <div class="attempts" id="attempts">Intentos restantes: 3</div>
+            </div>
+            
+            <div class="love-letter-container" id="loveLetterContainer" style="display: none;">
+                <div class="unlocked-message">
+                    <span class="unlock-emoji">🔓</span>
+                    <p>¡Carta desbloqueada con éxito!</p>
+                </div>
+                <div class="love-letter" id="loveLetter">
+                    
+                </div>
+                <button class="generate-btn" onclick="generateLetter()">Leer mi corazón 💕</button>
+            </div>
+        </div>
+        
+        
+        <div class="section">
+            <h3>🎮 Nuestro mundito</h3>
+            <p>Arriba el mundito Ernia</p>
+            <div class="minecraft-scene">
+                <div class="minecraft-block minecraft-dirt">🟫</div>
+                <div class="minecraft-block minecraft-grass">🟩</div>
+                <div class="minecraft-block minecraft-flower">🌻</div>
+                <div class="minecraft-block minecraft-dirt">🟫</div>
+                <div class="minecraft-block minecraft-grass">🟩</div>
+                <div class="minecraft-block minecraft-flower">🌼</div>
+                <div class="minecraft-text">
+                    "Tenemos que seguir jugando juntos, construyendo nuestro mundo"
+                </div>
+            </div>
+            <button class="craft-btn" onclick="craftLove()">Poción de curación 💖</button>
+        </div>
+        
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
