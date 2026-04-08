@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Galería 📸</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌻</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="gallery-body">
+    <div class="petals" id="petals"></div>
+    
+    <button class="night-mode-toggle" onclick="toggleNightMode()" title="Cambiar modo">🌙</button>
+    
+    <nav class="nav-menu">
+        <a href="index.html" class="nav-link">⬅️ Volver al Inicio</a>
+    </nav>
+
+    <header>
+        <h1><span id="cameraEmoji" style="cursor:pointer">📸</span> Momentos Especiales 📸</h1>
+        <p class="subtitle" id="gallerySubtitle" style="cursor:pointer">Y los demás momentos que falten</p>
+    </header>
+
+    <div class="polaroid-gallery">
+        <div class="polaroid" style="--angle: -3deg" id="firstPhoto">
+            <img src="foticos/foto (1).jpeg" alt="Momento 1">
+            <div class="caption">¿Que hace acá Loky?</div>
+        </div>
+        <div class="polaroid" style="--angle: 2deg">
+            <img src="foticos/foto (2).jpeg" alt="Momento 2">
+            <div class="caption">Faltan más abrazos amor</div>
+        </div>
+        <div class="polaroid" style="--angle: -1deg" id="photoQuinzel">
+            <img src="foticos/foto (9).jpeg" alt="Momento 3">
+            <div class="caption">Quinzel Navideña</div>
+        </div>
+   
+        <div class="polaroid" style="--angle: 3deg">
+            <img src="foticos/foto (6).jpeg" alt="Momento 6">
+            <div class="caption">Adoro verte sonreír así</div>
+        </div>
+                <div class="polaroid" style="--angle: 1deg">
+            <img src="foticos/foto (8).jpeg" alt="Momento 8">
+            <div class="caption">Gracias por mi  fondo amor</div>
+        </div>
+        <div class="polaroid" style="--angle: -4deg">
+            <img src="foticos/foto (7).jpeg" alt="Momento 7">
+            <div class="caption">Con tu paltita jajss</div>
+        </div>
+
+        <div class="polaroid" style="--angle: 2deg">
+            <img src="foticos/foto (10).jpeg" alt="Momento 10">
+            <div class="caption">Eres tan linda cuando me abrazas</div>
+        </div>
+        <div class="polaroid" style="--angle: -2deg">
+            <img src="foticos/foto (11).jpeg" alt="Momento 11">
+            <div class="caption">No sabes como te adoré la primera vez que vi la imagen</div>
+        </div>
+        <div class="polaroid" style="--angle: 4deg">
+            <img src="foticos/foto (12).jpeg" alt="Momento 12">
+            <div class="caption">Aquí con la pellejita siono</div>
+        </div>
+        <div class="polaroid" style="--angle: -1deg">
+            <img src="foticos/foto (13).jpeg" alt="Momento 13">
+            <div class="caption">Que hermosa te ves, nunca me cansaré de decirtelo</div>
+        </div>
+        <div class="polaroid" style="--angle: 3deg">
+            <img src="foticos/foto (14).jpeg" alt="Momento 14">
+            <div class="caption">JAJAJA ese filtro que</div>
+        </div>
+        <div class="polaroid" style="--angle: -4deg">
+            <img src="foticos/foto (15).jpeg" alt="Momento 15">
+            <div class="caption">Robando un carro así es</div>
+        </div>
+        <div class="polaroid" style="--angle: 2deg">
+            <img src="foticos/foto (16).jpeg" alt="Momento 16">
+            <div class="caption">Que linda te ves con mi casaca</div>
+        </div>
+        <div class="polaroid" style="--angle: 1deg">
+            <img src="foticos/foto (18).jpeg" alt="Momento 18">
+            <div class="caption">Jajajaja</div>
+        </div>
+        <div class="polaroid" style="--angle: -2deg">
+            <img src="foticos/foto (19).jpeg" alt="Momento 19">
+            <div class="caption">Me veo tan mal pero que lindo hacerte reír</div>
+        </div>
+        <div class="polaroid" style="--angle: 4deg">
+            <img src="foticos/foto (20).jpeg" alt="Momento 20">
+            <div class="caption">🤫🧏🏻‍♂️</div>
+        </div>
+        <div class="polaroid" style="--angle: -1deg">
+            <img src="foticos/foto (21).jpeg" alt="Momento 21">
+            <div class="caption">Simplemente preciosa</div>
+        </div>
+        <div class="polaroid" style="--angle: 3deg">
+            <img src="foticos/foto (22).jpeg" alt="Momento 22">
+            <div class="caption">Jajajaj que pasaba atrás?</div>
+        </div>
+        <div class="polaroid" style="--angle: 2deg">
+            <img src="foticos/foto (24).jpeg" alt="Momento 24">
+            <div class="caption">Adoro tus lindos ojos</div>
+        </div>
+        <div class="polaroid" style="--angle: -3deg">
+            <img src="foticos/foto (25).jpeg" alt="Momento 25">
+            <div class="caption">Que linda te veías con tu vestido</div>
+        </div>
+        <div class="polaroid" style="--angle: 1deg">
+            <img src="foticos/foto (26).jpeg" alt="Momento 26">
+            <div class="caption">Así como la ven, moriría por ella</div>
+        </div>
+        <div class="polaroid" style="--angle: -2deg">
+            <img src="foticos/foto (27).jpeg" alt="Momento 27">
+            <div class="caption">Adoro jugar contigo a cuaquier cosa</div>
+        </div>
+        <div class="polaroid" style="--angle: 4deg" id="lastPhoto">
+            <img src="foticos/foto (28).jpg" alt="Momento 28">
+            <div class="caption">Hermosa mi novia, me encanta decirlo</div>
+        </div>
+    </div>
+
+    <!-- Modal de Cupones Secretos -->
+    <div id="couponModal" class="coupon-modal">
+        <div class="coupon-card">
+            <div class="coupon-emoji" id="couponEmoji">🎁</div>
+            <h2 class="coupon-title" id="couponTitle">¡Vale Cupón!</h2>
+            <p class="coupon-text" id="couponText">Has encontrado un secreto...</p>
+            <button class="close-coupon" onclick="closeCoupon()">¡Lo quiero! ❤️</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
